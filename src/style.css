@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
+
+:root {
+  --main-background: hsl(0, 0%, 8%);
+  --grey-background: hsl(0, 0%, 14%);
+  --bright-green: hsl(153, 71%, 59%);
+  --text-color: hsl(0, 0%, 100%);
+  --text-color-grey: hsl(0, 0%, 85%);
+  --error: hsl(7, 100%, 68%);
+  --transition: 450ms ease-in;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  background-color: var(--main-background);
+  color: var(--text-color);
+}
+
+nav {
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+}
+
+nav h1:hover {
+  cursor: pointer;
+  color: var(--bright-green);
+  transition: var(--transition);
+}
+
+.mediaLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* INTRO PART */
+.introPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 5rem 0.5rem 5rem 0.5rem;
+}
+
+.left img {
+  border-radius: 50%;
+  box-shadow: 0 0 10px #fff;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.right h1 {
+  font-size: 2.3rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.right h1 span {
+  text-decoration: none;
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px;
+  width: fit-content;
+  border-color: var(--bright-green);
+}
+
+.orangeColor {
+  color: var(--error);
+}
+
+.right p {
+  text-align: center;
+  color: var(--text-color-grey);
+}
+
+.contact_me {
+  padding-bottom: 14px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: var(--text-color);
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px;
+  width: fit-content;
+  border-color: var(--bright-green);
+}
+
+.contact_me :hover {
+  cursor: pointer;
+}
+
+/* SKILLS */
+.skillsPart {
+  margin: 2rem;
+}
+.skillsPart h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--error);
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0.5rem;
+}
+
+.skills span {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* PROJECTS SECTION */
+.projectsSection {
+  margin: 2rem 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.projectsSection h1 {
+  font-size: 2.2rem;
+  color: var(--error);
+}
+
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.box img {
+  width: 100%;
+}
+
+.projectInfo {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.projectInfo h2 {
+  margin-bottom: 0.2rem;
+}
+
+.projectInfo span {
+  color: var(--text-color-grey);
+  margin-right: 0.5rem;
+}
+
+.projectLinks {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.projectLinks a {
+  color: var(--text-color);
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding-bottom: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px;
+  width: fit-content;
+  border-color: var(--bright-green);
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  background-color: var(--grey-background);
+  padding: 2rem 1rem;
+}
+
+.contactMe {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contactMe form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input,
+textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--text-color);
+  background-color: var(--grey-background);
+  color: var(--text-color);
+  font-weight: bold;
+  padding-left: 1.2rem;
+  padding-top: 1rem;
+}
+
+form input {
+  padding-bottom: 1.2rem;
+}
+
+#namePer.error,
+#emailId.error,
+#message.error {
+  border-color: #dc3545;
+  /* color: red; */
+}
+
+.sendMess {
+  margin-top: 1rem;
+  outline: none;
+  border: none;
+  align-self: flex-end;
+  text-transform: uppercase;
+  background-color: var(--grey-background);
+  color: var(--text-color);
+  font-size: 1.5rem;
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px;
+  width: fit-content;
+  border-color: var(--bright-green);
+}
+
+.footerInfo {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footerInfo h1 {
+  font-size: 1.5rem;
+}
+
+.mediaLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hoverClass:hover {
+  color: var(--bright-green);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+@media screen and (width >=900px) {
+  nav {
+    flex-direction: row;
+    margin: 2rem 5rem;
+  }
+
+  nav h1 {
+    font-size: 2rem;
+  }
+
+  .horizontalLine {
+    display: none;
+  }
+
+  .introPart {
+    flex-direction: row-reverse;
+    width: 80%;
+    margin: 5rem auto;
+    gap: 4rem;
+    padding: 7rem 0;
+    justify-content: space-around;
+  }
+
+  .right h1 {
+    font-size: 4rem;
+  }
+
+  .right p {
+    font-size: 2rem;
+  }
+
+  .right a {
+    font-size: 2rem;
+  }
+
+  .skillsPart h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--error);
+  }
+
+  .skills {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 5rem;
+    margin-bottom: 10rem;
+  }
+
+  .skills span {
+    width: 30%;
+    font-size: 2.5rem;
+  }
+
+  .projectsSection {
+    margin: 2rem 5rem;
+  }
+  .projectsSection h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .box {
+    width: 45%;
+    height: 40%;
+  }
+
+  .contactMe {
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .contactLeft {
+    width: 45%;
+  }
+
+  .contactMe h1 {
+    text-align: start;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .contactLeft p {
+    text-align: start;
+    font-size: 1.4rem;
+  }
+
+  .contactMe form {
+    width: 45%;
+  }
+
+  form input,
+  textarea {
+    font-size: 1.1rem;
+  }
+}
